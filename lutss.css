@@ -62,7 +62,7 @@
     align-content: center;
     width: 25px;
     height: 30px;
-    font-size: 27;
+    font-size: 25;
 }
 .dice{
     font-size: 33; 
@@ -77,7 +77,7 @@
     align-content: center;
     width: 40px;
     height: 30px;
-    font-size: 27;
+    font-size: 25;
 }
 .stats_buttons{
     display: flex;
@@ -127,9 +127,9 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 25px;
+    width: 60px;
     height: 30px;
-    font-size: 25;
+    font-size: 20;
 }
 .inputWeaponMod{
     display: flex;
@@ -137,7 +137,7 @@
     align-content: center;
     width: 40px;
     height: 30px;
-    font-size: 25;
+    font-size: 20;
 }
 .weaponButtons{
     display: flex;
