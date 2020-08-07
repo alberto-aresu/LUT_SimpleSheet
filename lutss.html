@@ -73,14 +73,22 @@
                 <input class="ability_input_mod" type="text" name="presence_mod">
             </div>
             <div class="stats_buttons">
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
-                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{agility_dices}d10skh1 @{agility_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{courage_dices}d10skh1 @{courage_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{strength_dices}d10skh1 @{strength_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{intelligence_dices}d10skh1 @{intelligence_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{magic_dices}d10skh1 @{magic_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{perception_dices}d10skh1 @{perception_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{dexterity_dices}d10skh1 @{dexterity_mod}]]}}"></button>
+                <button type="roll" name="agility_check"
+                    value="&{template:default} {{name=@{character_name}, Agilità}} {{Agilità=[[@{presence_dices}d10skh1 @{presence_mod}]]}}"></button>
             </div>
         </div>
         <div class="stats_right">
@@ -108,7 +116,7 @@
     </div>
 
     <div style="display: flex; margin-top: 20;justify-content: space-around; ">
-        <div style="display: flex; flex-direction: column; justify-content: space-around;">
+        <div style="display: flex; flex-direction: column; justify-content: space-around; width: 30%;">
             <div class="makeWeapon">
                 <div>
                     <div>
@@ -128,7 +136,8 @@
                             <input class="inputWeaponMod" type="text" name="attackMod">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="attackRoll"></button>
+                            <button type="roll" name="attackRoll"
+                                value="&{template:default} {{name=@{character_name}, @{weapon}}} {{Attacco=[[@{attackDice}skh1@{attackMod}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <a>Danno</a>
@@ -143,7 +152,8 @@
                             <input class="inputWeaponMod" type="text" name="damageMod">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="damageRoll"></button>
+                            <button type="roll" name="damageRoll"
+                                value="&{template:default} {{name=@{character_name}, @{weapon}}} {{Danno=[[@{damageDice}skh1@{damageMod}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -151,7 +161,7 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon2"></div>
                     </div>
                     <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
                         <div class="weapons">
@@ -167,7 +177,8 @@
                             <input class="inputWeaponMod" type="text" name="attackMod2">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="attackRoll2"></button>
+                            <button type="roll" name="attackRoll2"
+                                value="&{template:default} {{name=@{character_name}, @{weapon2}}} {{Attacco=[[@{attackDice2}skh1@{attackMod2}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <a>Danno</a>
@@ -182,7 +193,8 @@
                             <input class="inputWeaponMod" type="text" name="damageMod2">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="damageRoll2"></button>
+                            <button type="roll" name="damageRoll2"
+                                value="&{template:default} {{name=@{character_name}, @{weapon2}}} {{Danno=[[@{damageDice2}skh1@{damageMod2}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -190,7 +202,7 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon3"></div>
                     </div>
                     <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
                         <div class="weapons">
@@ -206,7 +218,8 @@
                             <input class="inputWeaponMod" type="text" name="attackMod3">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="attackRoll3"></button>
+                            <button type="roll" name="attackRoll3"
+                                value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Attacco=[[@{attackDice3}skh1@{attackMod3}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <a>Danno</a>
@@ -221,7 +234,8 @@
                             <input class="inputWeaponMod" type="text" name="damageMod3">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="damageRoll3"></button>
+                            <button type="roll" name="damageRoll3"
+                                value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Danno=[[@{damageMod3}skh1@{damageMod3}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -229,7 +243,7 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon4"></div>
                     </div>
                     <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
                         <div class="weapons">
@@ -245,7 +259,8 @@
                             <input class="inputWeaponMod" type="text" name="attackMod4">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="attackRoll4"></button>
+                            <button type="roll" name="attackRoll4"
+                                value="&{template:default} {{name=@{character_name}, @{weapon4}}} {{Attacco=[[@{attackDice4}skh1@{attackMod4}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <a>Danno</a>
@@ -260,7 +275,8 @@
                             <input class="inputWeaponMod" type="text" name="damageMod4">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="damageRoll4"></button>
+                            <button type="roll" name="damageRoll4"
+                                value="&{template:default} {{name=@{character_name}, @{weapon4}}} {{Danno=[[@{damageDice4}skh1@{damageMod4}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -268,7 +284,7 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon5"></div>
                     </div>
                     <div class="stats_left" style="margin-bottom: 10; margin-top: 5;">
                         <div class="weapons">
@@ -284,7 +300,8 @@
                             <input class="inputWeaponMod" type="text" name="attackMod5">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="attackRoll5"></button>
+                            <button type="roll" name="attackRoll5"
+                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Attacco=[[@{attackDice5}skh1@{attackMod5}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <a>Danno</a>
@@ -299,7 +316,8 @@
                             <input class="inputWeaponMod" type="text" name="damageMod5">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="damageRoll5"></button>
+                            <button type="roll" name="damageRoll5"
+                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Danno=[[@{damageDice5}skh1@{damageMod5}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -318,7 +336,7 @@
                     <input class="input_stats" type="number" min="0">
                 </div>
             </div>
-            <b style="font-size: 20;">Borraccia</b>
+            <b style="font-size: 20;margin-bottom: 10px;">Borraccia</b>
             <input class="input_stats" type="number" max="7" min="0">
         </div>
     </div>
@@ -334,4 +352,4 @@
             <textarea class="equip_ability_input_right"></textarea>
         </div>
     </div>
-</div>            
+</div>
