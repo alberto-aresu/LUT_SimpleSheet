@@ -1,0 +1,175 @@
+.background_image{
+    background-image: url('background.jpg');
+    width: auto;
+    height: auto;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+}
+.character_info_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.character_info_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.merit{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.stats{
+    font-size: 35; 
+    margin-left: 10; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.stats_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+.stats_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stats_checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.stats_number{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10;
+}
+.ability_input_dice{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+    height: 30px;
+    font-size: 27;
+}
+.dice{
+    font-size: 33; 
+    margin-left: 10; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ability_input_mod{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    height: 30px;
+    font-size: 27;
+}
+.stats_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.input_stats{
+    width: 70px;
+    font-size: 40;
+}
+.input_stats_min_max{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.character_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.makeWeapon{
+    display: flex; 
+}
+.weaponName{
+    display: flex;
+    margin-left: 20;
+    font-size: 20;
+    align-items: center;
+}
+.weapons{
+    font-size: 25; 
+    margin-left: 10; 
+    display: flex;
+}
+.weaponsStats {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-self: center;
+}
+.inputWeaponDice{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+    height: 30px;
+    font-size: 25;
+}
+.inputWeaponMod{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    height: 30px;
+    font-size: 25;
+}
+.weaponButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.utility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20;
+}
+.inputUtility{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.equip_ability{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.equip_ability_input_right{
+    width: 100%;
+    height: 400;
+    font-size: 25;
+}
+.equip_ability_input_left{
+    width: 100%;
+    height: 190;
+    font-size: 25;
+}

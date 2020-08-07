@@ -1,0 +1,337 @@
+<link rel="stylesheet" href="lutss.css">
+<div class="background_image">
+
+    <div class="info">
+        <div class="character_info">
+            <b>Nome</b><input type="text" name="character_name" />
+            <b>Razza</b><input type="text" name="race" />
+        </div>
+        <div class="character_info">
+            <b>Ruolo</b><input type="text" name="role" />
+            <b>Pregio</b><input type="text" name="merit" />
+        </div>
+        <div class="character_info_1">
+            <b>Punti Avventura</b><input type="number" name="character_pa"
+                style="width: 60px; height: 40px; font-size: 30;" min="0" />
+        </div>
+        <div class="character_info_2">
+            <b>Fiorini</b><input type="number" name="florins" style="width: 60px; height: 40px; font-size: 30;"
+                min="0" />
+        </div>
+    </div>
+
+    <div style="display: flex; margin-top: 20px; justify-content: space-around; ">
+        <div class="stats_left">
+            <div class="stats_checkbox">
+                <input type="checkbox" name="agility_merit">
+                <input type="checkbox" name="courage_merit">
+                <input type="checkbox" name="strength_merit">
+                <input type="checkbox" name="intelligence_merit">
+                <input type="checkbox" name="magic_merit">
+                <input type="checkbox" name="perception_merit">
+                <input type="checkbox" name="dexterity_merit">
+                <input type="checkbox" name="presence_merit">
+            </div>
+            <div class="stats">
+                <b>Agilità</b>
+                <b>Coraggio</b>
+                <b>Forza</b>
+                <b>Intelligenza</b>
+                <b>Magia</b>
+                <b>Percezione</b>
+                <b>Manualità</b>
+                <b>Socialità</b>
+            </div>
+            <div class="stats_number">
+                <input class="ability_input_dice" type="text" name="agility_dices">
+                <input class="ability_input_dice" type="text" name="courage_dices">
+                <input class="ability_input_dice" type="text" name="strength_dices">
+                <input class="ability_input_dice" type="text" name="intelligence_dices">
+                <input class="ability_input_dice" type="text" name="magic_dices">
+                <input class="ability_input_dice" type="text" name="perception_dices">
+                <input class="ability_input_dice" type="text" name="dexterity_dices">
+                <input class="ability_input_dice" type="text" name="presence_dices">
+            </div>
+            <div class="dice">
+                <b>D</b>
+                <b>D</b>
+                <b>D</b>
+                <b>D</b>
+                <b>D</b>
+                <b>D</b>
+                <b>D</b>
+                <b>D</b>
+            </div>
+            <div class="stats_number">
+                <input class="ability_input_mod" type="text" name="agility_mod">
+                <input class="ability_input_mod" type="text" name="courage_mod">
+                <input class="ability_input_mod" type="text" name="strength_mod">
+                <input class="ability_input_mod" type="text" name="intelligence_mod">
+                <input class="ability_input_mod" type="text" name="magic_mod">
+                <input class="ability_input_mod" type="text" name="perception_mod">
+                <input class="ability_input_mod" type="text" name="dexterity_mod">
+                <input class="ability_input_mod" type="text" name="presence_mod">
+            </div>
+            <div class="stats_buttons">
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+                <button type="roll" name="agility_check"></button>
+            </div>
+        </div>
+        <div class="stats_right">
+            <b style="font-size: 30; margin-bottom: 10px;">Salute</b>
+            <div style="display: flex;">
+                <div class="input_stats_min_max">
+                    <b>Attuale</b><input class="input_stats" type="number">
+                </div>
+                <div class="input_stats_min_max">
+                    <b>Massima</b><input class="input_stats" type="number">
+                </div>
+            </div>
+            <b style="font-size: 30; margin-bottom: 10px;">Mana</b>
+            <div style="display: flex;">
+                <div class="input_stats_min_max">
+                    <b>Attuale</b><input class="input_stats" type="number" min="0">
+                </div>
+                <div class="input_stats_min_max">
+                    <b>Massimo</b><input class="input_stats" type="number" min="0">
+                </div>
+            </div>
+            <b style="font-size: 30;">Armatura</b>
+            <input class="input_stats" type="number" min="0">
+        </div>
+    </div>
+
+    <div style="display: flex; margin-top: 20;justify-content: space-around; ">
+        <div style="display: flex; flex-direction: column; justify-content: space-around;">
+            <div class="makeWeapon">
+                <div>
+                    <div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                    </div>
+                    <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
+                        <div class="weapons">
+                            <a>Attacco</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attackDice">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="attackMod">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="attackRoll"></button>
+                        </div>
+                        <div class="weapons">
+                            <a>Danno</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="damageDice">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="damageMod">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="damageRoll"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="makeWeapon">
+                <div>
+                    <div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                    </div>
+                    <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
+                        <div class="weapons">
+                            <a>Attacco</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attackDice2">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="attackMod2">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="attackRoll2"></button>
+                        </div>
+                        <div class="weapons">
+                            <a>Danno</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="damageDice2">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="damageMod2">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="damageRoll2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="makeWeapon">
+                <div>
+                    <div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                    </div>
+                    <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
+                        <div class="weapons">
+                            <a>Attacco</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attackDice3">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="attackMod3">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="attackRoll3"></button>
+                        </div>
+                        <div class="weapons">
+                            <a>Danno</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="damageDice3">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="damageMod3">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="damageRoll3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="makeWeapon">
+                <div>
+                    <div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                    </div>
+                    <div class="stats_left" style="margin-bottom: 15; margin-top: 5;">
+                        <div class="weapons">
+                            <a>Attacco</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attackDice4">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="attackMod4">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="attackRoll4"></button>
+                        </div>
+                        <div class="weapons">
+                            <a>Danno</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="damageDice4">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="damageMod4">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="damageRoll4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="makeWeapon">
+                <div>
+                    <div>
+                        <div class="weaponName"><a>Arma</a><input style="margin-left: 10;" name="weapon"></div>
+                    </div>
+                    <div class="stats_left" style="margin-bottom: 10; margin-top: 5;">
+                        <div class="weapons">
+                            <a>Attacco</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attackDice5">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="attackMod5">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="attackRoll5"></button>
+                        </div>
+                        <div class="weapons">
+                            <a>Danno</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="damageDice5">
+                        </div>
+                        <div class="weapons">
+                            <a>D</a>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponMod" type="text" name="damageMod5">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="damageRoll5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="utility">
+            <b style="font-size: 20; margin-bottom: 10px;">Freccie/Dardi</b>
+            <div style="display: flex;">
+                <div class="input_stats_min_max">
+                    <input class="input_stats" type="number" max="20" min="0">
+                </div>
+            </div>
+            <b style="font-size: 20; margin-bottom: 10px;">Razioni</b>
+            <div style="display: flex;">
+                <div class="inputUtility">
+                    <input class="input_stats" type="number" min="0">
+                </div>
+            </div>
+            <b style="font-size: 20;">Borraccia</b>
+            <input class="input_stats" type="number" max="7" min="0">
+        </div>
+    </div>
+    <div style="display: flex; justify-content: space-around;">
+        <div class="equip_ability">
+            <div><b>Abilità di razza</b></div>
+            <textarea class="equip_ability_input_left"></textarea>
+            <div><b>Note varie</b></div>
+            <textarea class="equip_ability_input_left"></textarea>
+        </div>
+        <div class="equip_ability">
+            <div><b>Abilità di ruolo</b></div>
+            <textarea class="equip_ability_input_right"></textarea>
+        </div>
+    </div>
+</div>            
