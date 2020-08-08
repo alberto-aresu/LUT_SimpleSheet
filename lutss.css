@@ -9,23 +9,26 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; 
+    width: 100%;
 }
 .character_info{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     margin-top: 20px;
+    width: 50%;
+    margin-left: 20px;
 }
 .character_info_1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
 }
 .character_info_2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
 }
 .merit{
     display: flex;
@@ -33,7 +36,14 @@
     margin-top: 10px;
 }
 .stats{
-    font-size: 35; 
+    font-size: 30; 
+    margin-left: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dice{
+    font-size: 30; 
     margin-left: 10px; 
     display: flex;
     flex-direction: column;
@@ -42,16 +52,29 @@
 .stats_left {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-self: center;
-    width: 60%;
+    margin-left: 10px;
+    width: 50%;
 }
 .stats_right{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 55%;
+    margin-right: 10px;
+}
+.bs{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+}
+.input_bs{
+    display: flex;
     justify-content: center;
-    width: 40%;
+    align-content: center;
+    width: 60px;
+    font-size: 20px;
 }
 .stats_checkbox{
     display: flex;
@@ -72,13 +95,6 @@
     height: 30px;
     font-size: 25;
 }
-.dice{
-    font-size: 33; 
-    margin-left: 10px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 .ability_input_mod{
     display: flex;
     justify-content: center;
@@ -94,8 +110,8 @@
     margin-left: 10px;
 }
 .input_stats{
-    width: 70px;
-    font-size: 40;
+    width: 55px;
+    font-size: 25;
 }
 .input_stats_min_max{
     display: flex; 
@@ -106,6 +122,13 @@
 }
 .makeWeapon{
     display: flex;
+    margin-top: 10px;
+}
+.stats_weapon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
 }
 .weaponName{
     display: flex;
@@ -152,7 +175,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 10%;
+}
+.stats_right_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .inputUtility{
     display: flex; 
@@ -176,4 +204,10 @@
     width: 340px;
     height: 400px;
     font-size: 20;
+}
+.notes{
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 10px; 
+    width: 100%;
 }
