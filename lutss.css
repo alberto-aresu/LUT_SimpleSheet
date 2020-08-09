@@ -129,7 +129,7 @@
 }
 .makeWeapon{
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .stats_weapon{
     display: flex;
@@ -140,12 +140,12 @@
 .weaponName{
     display: flex;
     margin-left: 20px;
-    font-size: 20;
+    font-size: 15;
     align-items: center;
 }
 .weapons{
-    font-size: 25; 
-    margin-left: 10; 
+    font-size: 20; 
+    margin-left: 5px; 
     display: flex;
 }
 .weaponsStats {
@@ -159,17 +159,9 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 60px;
-    height: 30px;
-    font-size: 20;
-}
-.inputWeaponMod{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 40px;
-    height: 30px;
-    font-size: 20;
+    width: 65px;
+    height: 20px;
+    font-size: 15;
 }
 .weaponButtons{
     display: flex;
@@ -179,9 +171,21 @@
 }
 .utility{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+.extra_ability{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.extra_ability_input{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-around;
+    margin-top: 10px;
 }
 .stats_right_bottom{
     display: flex;

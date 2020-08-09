@@ -252,7 +252,7 @@
     <!--Weapons (only four) and other Character Stats-->
 
     <div style="display: flex; margin-top: 20;justify-content: space-around;width: 100%;">
-        <div style="display: flex; flex-direction: column;">
+        <div style="display: flex; flex-direction: column; width: 40%;">
             <div style="display: flex; justify-content: space-around; align-items: center;">
                 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <b style="font-size: 20; margin-bottom: 5px;">Salute</b>
@@ -297,12 +297,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="attackDice2">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="attackMod2">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="attackRoll2"
-                                value="&{template:default} {{name=@{character_name}, @{weapon2}}} {{Attacco=[[@{attackDice2}skh1@{attackMod2}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon2}}} {{Attacco=[[@{attackDice2}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <b>Danno</b>
@@ -310,12 +307,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="damageDice2">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="damageMod2">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll2"
-                                value="&{template:default} {{name=@{character_name}, @{weapon2}}} {{Danno=[[@{damageDice2}skh1@{damageMod2}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon2}}} {{Danno=[[@{damageDice2}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -332,12 +326,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="attackDice3">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="attackMod3">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="attackRoll3"
-                                value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Attacco=[[@{attackDice3}skh1@{attackMod3}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Attacco=[[@{attackDice3}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <b>Danno</b>
@@ -345,12 +336,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="damageDice3">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="damageMod3">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll3"
-                                value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Danno=[[@{damageMod3}skh1@{damageMod3}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Danno=[[@{damageDice3}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -367,12 +355,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="attackDice4">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="attackMod4">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="attackRoll4"
-                                value="&{template:default} {{name=@{character_name}, @{weapon4}}} {{Attacco=[[@{attackDice4}skh1@{attackMod4}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon4}}} {{Attacco=[[@{attackDice4}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <b>Danno</b>
@@ -380,12 +365,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="damageDice4">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="damageMod4">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll4"
-                                value="&{template:default} {{name=@{character_name}, @{weapon4}}} {{Danno=[[@{damageDice4}skh1@{damageMod4}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon4}}} {{Danno=[[@{damageDice4}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -402,12 +384,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="attackDice5">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="attackMod5">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="attackRoll5"
-                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Attacco=[[@{attackDice5}skh1@{attackMod5}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Attacco=[[@{attackDice5}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <b>Danno</b>
@@ -415,12 +394,9 @@
                         <div class="weaponsStats">
                             <input class="inputWeaponDice" type="text" name="damageDice5">
                         </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponMod" type="text" name="damageMod5">
-                        </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll5"
-                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Danno=[[@{damageDice5}skh1@{damageMod5}]]}}"></button>
+                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Danno=[[@{damageDice5}]]}}"></button>
                         </div>
                     </div>
                 </div>
@@ -429,22 +405,84 @@
 
         <!--Utility and other Beasts Stats-->
 
-        <div class="utility">
-            <b style="font-size: 20; margin-bottom: 10px;">Freccie/Dardi</b>
-            <div style="display: flex;">
-                <div class="input_stats_min_max">
-                    <input class="input_stats" type="number" max="20" min="0">
+        <div style="display: flex; flex-direction: column;  justify-content: space-around;">
+            <div class="utility">
+                <div style="display: flex; flex-direction: column;">
+                    <b style="font-size: 15; margin-bottom: 10px;">Freccie/Dardi</b>
+                    <div class="input_stats_min_max">
+                        <input class="input_stats" type="number" max="20" min="0">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <b style="font-size: 15; margin-bottom: 10px;">Razioni</b>
+                    <div class="input_stats_min_max">
+                        <input class="input_stats" type="number" max="20" min="0">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <b style="font-size: 15; margin-bottom: 10px;">Borraccia</b>
+                    <div class="input_stats_min_max">
+                        <input class="input_stats" type="number" max="7" min="0">
+                    </div>
                 </div>
             </div>
-            <b style="font-size: 20; margin-bottom: 10px;">Razioni</b>
-            <div style="display: flex;">
-                <div class="inputUtility">
-                    <input class="input_stats" type="number" min="0">
+            <div class="extra_ability">
+                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability"></div>
+                <div class="extra_ability_input">
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability}}} {{Roll=[[@{ability_roll_sx}]]}}"></button>
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability}}} {{Roll=[[@{ability_roll_dx}]]}}"></button>
                 </div>
             </div>
-            <b style="font-size: 20;margin-bottom: 10px;">Borraccia</b>
-            <input class="input_stats" type="number" max="7" min="0">
+            <div class="extra_ability">
+                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability2"></div>
+                <div class="extra_ability_input">
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx2">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability2}}} {{Roll=[[@{ability_roll_sx2}]]}}"></button>
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx2">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability2}}} {{Roll=[[@{ability_roll_dx2}]]}}"></button>
+                </div>
+            </div>
+            <div class="extra_ability">
+                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability3"></div>
+                <div class="extra_ability_input">
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx3">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability3}}} {{Roll=[[@{ability_roll_sx3}]]}}"></button>
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx3">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability3}}} {{Roll=[[@{ability_roll_dx3}]]}}"></button>
+                </div>
+            </div>
+            <div class="extra_ability">
+                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability4"></div>
+                <div class="extra_ability_input">
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx4">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability4}}} {{Roll=[[@{ability_roll_sx4}]]}}"></button>
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx4">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability4}}} {{Roll=[[@{ability_roll_dx4}]]}}"></button>
+                </div>
+            </div>
+            <div class="extra_ability">
+                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability5"></div>
+                <div class="extra_ability_input">
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx5">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability5}}} {{Roll=[[@{ability_roll_sx5}]]}}"></button>
+                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx5">
+                    <button type="roll"
+                        value="&{template:default} {{name=@{character_name}, @{ability5}}} {{Roll=[[@{ability_roll_dx5}]]}}"></button>
+                </div>
+            </div>
         </div>
+
 
         <div class="stats_right_bottom">
             <b style="font-size: 20; margin-bottom: 5px;">Orso</b>
@@ -506,6 +544,6 @@
 
 <script>
     function tutorial() {
-        alert('Caratteristiche Personaggio: nelle abilità, mettere a sinistra il numero di dadi e a destra il modificatore con il simbolo ( esempio: +1 o -1), come nella scheda originale.\n\nCaratteristiche Bestie Sovrane: negli spazi appositi, inserire i dadi da usare completi di numero, D e facce del dado (esempio: 2D10).\n\nArmi: inserire il nome e le statistiche negli appositi spazi, mettendo a sinistra i dadi da usare completi di numero, D e facce del dado (esempio: 2D10) e a destra il modificatore con il simbolo ( esempio: +1 o -1).\n\nIMPORTANTE: le caselle di selezione a sinistra delle Caratteristiche Personaggio e a destra del nome delle Bestie Sovrane, servono solo a ricordare quale Pregio si possiede e quale trasformazione si possiede e non vanno a modificare il lancio dei dadi. Dovrete ricordarvi di ritirare il Pregio se il dado o i dadi fanno 1 o 2 sul quella caratteristica.')
+        alert('Caratteristiche Personaggio: nelle caratteristiche, mettere a sinistra il numero di dadi e a destra il modificatore con il simbolo ( esempio: +1 o -1), come nella scheda originale.\n\nCaratteristiche Bestie Sovrane: negli spazi appositi, inserire i dadi da usare completi di numero, D e facce del dado (esempio: 2D10 o 2d10).\n\nArmi e Abilità: nelle armi e nelle abilità, inserire il valore completo di dadi e eventuale modificatore (esempio: 2D10+1 o 2d10+1), poi premere il bottone adiacente che li tirerà.\n\nIMPORTANTE: le caselle di selezione a sinistra delle Caratteristiche Personaggio e a destra del nome delle Bestie Sovrane, servono solo a ricordare quale Pregio si possiede e quale trasformazione si possiede e non vanno a modificare il lancio dei dadi. Dovrete ricordarvi di ritirare il Pregio se il dado o i dadi fanno 1 o 2 su quella caratteristica.')
     }
 </script>
