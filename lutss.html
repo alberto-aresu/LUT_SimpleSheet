@@ -24,6 +24,9 @@
             <b>Fiorini</b><input type="number" name="florins" style="width: 80px; height: 40px; font-size: 30;"
                 min="0" />
         </div>
+        <div class="info_button">
+            <button onclick="tutorial()">Clicca qui per sapere come usare la scheda</button>
+        </div>
     </div>
 
     <!--Principal Stats-->
@@ -119,7 +122,7 @@
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
-                <a></a> <!--This is to allign the buttons-->
+                <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Orso}} {{Agilità=[[@{bear_agility}skh1]]}}"></button>
                 <button type="roll"
@@ -154,7 +157,7 @@
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
-                <a></a> <!--This is to allign the buttons-->
+                <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Cervo}} {{Agilità=[[@{deer_agility}skh1]]}}"></button>
                 <button type="roll"
@@ -189,7 +192,7 @@
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
-                <a></a> <!--This is to allign the buttons-->
+                <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Aquila}} {{Agilità=[[@{eagle_agility}skh1]]}}"></button>
                 <button type="roll"
@@ -224,7 +227,7 @@
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
-                <a></a> <!--This is to allign the buttons-->
+                <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Serpente}} {{Agilità=[[@{snake_agility}skh1]]}}"></button>
                 <button type="roll"
@@ -500,3 +503,9 @@
     </div>
 
 </div>
+
+<script>
+    function tutorial() {
+        alert('Caratteristiche Personaggio: nelle abilità, mettere a sinistra il numero di dadi e a destra il modificatore con il simbolo ( esempio: +1 o -1), come nella scheda originale.\n\nCaratteristiche Bestie Sovrane: negli spazi appositi, inserire i dadi da usare completi di numero, D e facce del dado (esempio: 2D10).\n\nArmi: inserire il nome e le statistiche negli appositi spazi, mettendo a sinistra i dadi da usare completi di numero, D e facce del dado (esempio: 2D10) e a destra il modificatore con il simbolo ( esempio: +1 o -1).\n\nIMPORTANTE: le caselle di selezione a sinistra delle Caratteristiche Personaggio e a destra del nome delle Bestie Sovrane, servono solo a ricordare quale Pregio si possiede e quale trasformazione si possiede e non vanno a modificare il lancio dei dadi. Dovrete ricordarvi di ritirare il Pregio se il dado o i dadi fanno 1 o 2 sul quella caratteristica.')
+    }
+</script>

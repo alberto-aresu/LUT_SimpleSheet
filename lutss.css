@@ -30,6 +30,14 @@
     align-items: center;
     width: 20%;
 }
+.info_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 20%;
+}
 .merit{
     display: flex;
     margin-left: 10px;
@@ -53,15 +61,14 @@
     display: flex;
     flex-direction: row;
     align-self: center;
-    margin-left: 10px;
-    width: 50%;
+    margin-left: 15px;
+    width: 45%;
 }
 .stats_right{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 55%;
-    margin-right: 10px;
 }
 .bs{
     display: flex; 
