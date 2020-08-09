@@ -1,36 +1,87 @@
-.background_image{
-    background-image: url('background.jpg');
+.sheet-background_image{
+    background-image: url('https://lh3.googleusercontent.com/proxy/DnedhAlHP7F5gQZVN02yrdTFmezTpobr3Ge6yC3Rt83IazxPsYujZ0WRNRjgsFtGUT5jGBkx4c47ZkXuGvfth7buktk0');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
 }
-.info{
+.sheet-info{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
 }
-.character_info{
+.sheet-info_names{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.sheet-info_names_input{
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 10px;
+}
+.sheet-info_names_input1{
+    font-size: 15; 
+    width: 300px;
+}
+.sheet-pa_input{
+    width: 60px; 
+    height: 40px; 
+    font-size: 30;
+}
+.sheet-florins_input{
+    width: 80px; 
+    height: 40px; 
+    font-size: 30;
+}
+.sheet-bs_name_bear{
+    display: flex; 
+    width: 55px;
+}
+.sheet-bs_name_deer{
+    display: flex; 
+    width: 60px;
+}
+.sheet-bs_name_eagle{
+    display: flex; 
+    width: 70px;
+}
+.sheet-bs_name_snake{
+    display: flex; 
+    width: 80px;
+}
+.sheet-bs_buttons{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+}
+.sheet-all_stats{
+    display: flex; 
+    margin-top: 20px; 
+    width: 100%;
+}
+.sheet-character_info{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     width: 50%;
     margin-left: 20px;
 }
-.character_info_1{
+.sheet-character_info_1{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 20%;
 }
-.character_info_2{
+.sheet-character_info_2{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 20%;
 }
-.info_button{
+.sheet-info_button{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,63 +89,63 @@
     margin-right: 10px;
     width: 20%;
 }
-.merit{
+.sheet-merit{
     display: flex;
     margin-left: 10px;
     margin-top: 10px;
 }
-.stats{
+.sheet-stats{
     font-size: 30; 
     margin-left: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.dice{
+.sheet-dice{
     font-size: 30; 
     margin-left: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.stats_left {
+.sheet-stats_left {
     display: flex;
     flex-direction: row;
     align-self: center;
     margin-left: 15px;
     width: 45%;
 }
-.stats_right{
+.sheet-stats_right{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 55%;
 }
-.bs{
+.sheet-bs{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     justify-content: space-around;
 }
-.input_bs{
+.sheet-input_bs{
     display: flex;
     justify-content: center;
     align-content: center;
     width: 60px;
     font-size: 20px;
 }
-.stats_checkbox{
+.sheet-stats_checkbox{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.stats_number{
+.sheet-stats_number{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
 }
-.ability_input_dice{
+.sheet-ability_input_dice{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -102,7 +153,7 @@
     height: 30px;
     font-size: 25;
 }
-.ability_input_mod{
+.sheet-ability_input_mod{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -110,52 +161,87 @@
     height: 30px;
     font-size: 25;
 }
-.stats_buttons{
+.sheet-stats_buttons{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
 }
-.input_stats{
+.sheet-input_stats{
     width: 55px;
     font-size: 25;
 }
-.input_stats_min_max{
+.sheet-central_sheet{
+    display: flex; 
+    margin-top: 20;
+    justify-content: space-around;
+    width: 100%;
+}
+.sheet-central_left_sheet{
+    display: flex; 
+    flex-direction: column; 
+    width: 40%;
+}
+.sheet-central_left_sheet_healt{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+.sheet-central_left_sheet_healt_stats{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+.sheet-central_left_sheet_stats_name{
+    font-size: 20; 
+    margin-bottom: 5px;
+}
+.sheet-central_left_sheet_stats_name2{
+    font-size: 20; 
+    margin-bottom: 21px;
+}
+.sheet-input_stats_min_max{
     display: flex; 
     justify-content: space-around; 
     align-items: center; 
     flex-direction: column;
     margin-bottom: 10px;
 }
-.makeWeapon{
+.sheet-makeWeapon{
     display: flex;
     margin-top: 5px;
 }
-.stats_weapon{
+.sheet-stats_weapon{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
+    margin-bottom: 15; 
+    margin-top: 5;
 }
-.weaponName{
+.sheet-weaponName{
     display: flex;
     margin-left: 20px;
     font-size: 15;
     align-items: center;
 }
-.weapons{
+.sheet-weapon_input{
+    margin-left: 10;
+}
+.sheet-weapons{
     font-size: 20; 
     margin-left: 5px; 
     display: flex;
 }
-.weaponsStats {
+.sheet-weaponsStats {
     display: flex;
     flex-direction: row;
     margin-left: 10px;
     justify-content: space-around;
     align-self: center;
 }
-.inputWeaponDice{
+.sheet-inputWeaponDice{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -163,60 +249,87 @@
     height: 20px;
     font-size: 15;
 }
-.weaponButtons{
+.sheet-weaponButtons{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
 }
-.utility{
+.sheet-utility_container{
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-around;
+}
+.sheet-utility{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-.extra_ability{
+.sheet-utility_stats{
+    display: flex; 
+    flex-direction: column;
+}
+.sheet-utility_stats_name{
+    font-size: 15; 
+    margin-bottom: 10px;
+}
+.sheet-extra_ability{
     display: flex; 
     flex-direction: column; 
     justify-content: space-around;
 }
-.extra_ability_input{
+.sheet-extra_ability_input{
     display: flex; 
     flex-direction: row; 
     align-items: center; 
     justify-content: space-around;
     margin-top: 10px;
 }
-.stats_right_bottom{
+.sheet-extra_ability_input2{
+    width: 65px;
+    font-size: 15;
+}
+.sheet-stats_right_bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.inputUtility{
+.sheet-stats_right_bottom_name{
+    font-size: 20; 
+    margin-bottom: 5px;
+}
+.sheet-stats_right_bottom_display{
+    display: flex;
+}
+.sheet-inputUtility{
     display: flex; 
     justify-content: space-around; 
     align-items: center; 
     flex-direction: column;
     margin-bottom: 20px;
 }
-.equip_ability{
+.sheet-ability_input{
+    margin-left: 10px;
+}
+.sheet-equip_ability{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.equip_ability_input_left{
+.sheet-equip_ability_input_left{
     width: 340px;
     height: 190px;
     font-size: 20;
 }
-.equip_ability_input_right{
+.sheet-equip_ability_input_right{
     width: 340px;
     height: 400px;
     font-size: 20;
 }
-.notes{
+.sheet-notes{
     display: flex; 
     justify-content: space-around; 
     margin-top: 10px; 

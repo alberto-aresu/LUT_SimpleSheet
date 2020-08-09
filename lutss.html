@@ -1,47 +1,43 @@
-<link rel="stylesheet" href="lutss.css">
 <div class="background_image">
 
     <!--Character info-->
 
     <div class="info">
         <div class="character_info">
-            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+            <div class="info_names">
                 <b>Nome</b>
                 <b>Sono</b>
                 <b>Pregio</b>
             </div>
-            <div style="display: flex; flex-direction: column; margin-left: 10px;">
-                <input style="font-size: 15; width: 300px;" type="text" name="character_name" />
-                <input style="font-size: 15; width: 300px;" type="text" name="race_and_role" />
-                <input style="font-size: 15; width: 300px;" type="text" name="merit" />
+            <div class="info_names_input">
+                <input class="info_names_input1" type="text" name="attr_character_name" />
+                <input class="info_names_input1" type="text" name="attr_race_and_role" />
+                <input class="info_names_input1" type="text" name="attr_merit" />
             </div>
         </div>
         <div class="character_info_1">
-            <b>Punti Avventura</b><input type="number" name="character_pa"
-                style="width: 60px; height: 40px; font-size: 30;" min="0" />
+            <b>Punti Avventura</b><input type="number" name="attr_character_pa"
+                class="pa_input" min="0" />
         </div>
         <div class="character_info_2">
-            <b>Fiorini</b><input type="number" name="florins" style="width: 80px; height: 40px; font-size: 30;"
+            <b>Fiorini</b><input type="number" name="attr_florins" class="florins_input"
                 min="0" />
-        </div>
-        <div class="info_button">
-            <button onclick="tutorial()">Clicca qui per sapere come usare la scheda</button>
-        </div>
+        </div>        
     </div>
 
     <!--Principal Stats-->
 
-    <div style="display: flex; margin-top: 20px; width: 100%;">
+    <div class="all_stats">
         <div class="stats_left">
             <div class="stats_checkbox">
-                <input type="checkbox" name="agility_merit">
-                <input type="checkbox" name="courage_merit">
-                <input type="checkbox" name="strength_merit">
-                <input type="checkbox" name="intelligence_merit">
-                <input type="checkbox" name="magic_merit">
-                <input type="checkbox" name="perception_merit">
-                <input type="checkbox" name="dexterity_merit">
-                <input type="checkbox" name="presence_merit">
+                <input type="checkbox" name="attr_agility_merit">
+                <input type="checkbox" name="attr_courage_merit">
+                <input type="checkbox" name="attr_strength_merit">
+                <input type="checkbox" name="attr_intelligence_merit">
+                <input type="checkbox" name="attr_magic_merit">
+                <input type="checkbox" name="attr_perception_merit">
+                <input type="checkbox" name="attr_dexterity_merit">
+                <input type="checkbox" name="attr_presence_merit">
             </div>
             <div class="stats">
                 <b>Agilità</b>
@@ -54,14 +50,14 @@
                 <b>Socialità</b>
             </div>
             <div class="stats_number">
-                <input class="ability_input_dice" type="text" name="agility_dices">
-                <input class="ability_input_dice" type="text" name="courage_dices">
-                <input class="ability_input_dice" type="text" name="strength_dices">
-                <input class="ability_input_dice" type="text" name="intelligence_dices">
-                <input class="ability_input_dice" type="text" name="magic_dices">
-                <input class="ability_input_dice" type="text" name="perception_dices">
-                <input class="ability_input_dice" type="text" name="dexterity_dices">
-                <input class="ability_input_dice" type="text" name="presence_dices">
+                <input class="ability_input_dice" type="text" name="attr_agility_dices">
+                <input class="ability_input_dice" type="text" name="attr_courage_dices">
+                <input class="ability_input_dice" type="text" name="attr_strength_dices">
+                <input class="ability_input_dice" type="text" name="attr_intelligence_dices">
+                <input class="ability_input_dice" type="text" name="attr_magic_dices">
+                <input class="ability_input_dice" type="text" name="attr_perception_dices">
+                <input class="ability_input_dice" type="text" name="attr_dexterity_dices">
+                <input class="ability_input_dice" type="text" name="attr_presence_dices">
             </div>
             <div class="dice">
                 <b>D</b>
@@ -74,14 +70,14 @@
                 <b>D</b>
             </div>
             <div class="stats_number">
-                <input class="ability_input_mod" type="text" name="agility_mod">
-                <input class="ability_input_mod" type="text" name="courage_mod">
-                <input class="ability_input_mod" type="text" name="strength_mod">
-                <input class="ability_input_mod" type="text" name="intelligence_mod">
-                <input class="ability_input_mod" type="text" name="magic_mod">
-                <input class="ability_input_mod" type="text" name="perception_mod">
-                <input class="ability_input_mod" type="text" name="dexterity_mod">
-                <input class="ability_input_mod" type="text" name="presence_mod">
+                <input class="ability_input_mod" type="text" name="attr_agility_mod">
+                <input class="ability_input_mod" type="text" name="attr_courage_mod">
+                <input class="ability_input_mod" type="text" name="attr_strength_mod">
+                <input class="ability_input_mod" type="text" name="attr_intelligence_mod">
+                <input class="ability_input_mod" type="text" name="attr_magic_mod">
+                <input class="ability_input_mod" type="text" name="attr_perception_mod">
+                <input class="ability_input_mod" type="text" name="attr_dexterity_mod">
+                <input class="ability_input_mod" type="text" name="attr_presence_mod">
             </div>
             <div class="stats_buttons">
                 <button type="roll"
@@ -107,21 +103,21 @@
 
         <div class="stats_right">
             <div class="bs">
-                <div style="display: flex; width: 55px;">
+                <div class="bs_name_bear">
                     <b>Orso</b>
                     <input class="input_bs" type="checkbox">
                 </div>
-                <input class="input_bs" name="bear_agility" type="text">
-                <input class="input_bs" name="bear_courage" type="text">
-                <input class="input_bs" name="bear_strength" type="text">
-                <input class="input_bs" name="bear_intelligence" type="text">
-                <input class="input_bs" name="bear_magic" type="text">
-                <input class="input_bs" name="bear_perception" type="text">
-                <input class="input_bs" name="bear_dexterity" type="text">
-                <input class="input_bs" name="bear_presence" type="text">
+                <input class="input_bs" name="attr_bear_agility" type="text">
+                <input class="input_bs" name="attr_bear_courage" type="text">
+                <input class="input_bs" name="attr_bear_strength" type="text">
+                <input class="input_bs" name="attr_bear_intelligence" type="text">
+                <input class="input_bs" name="attr_bear_magic" type="text">
+                <input class="input_bs" name="attr_bear_perception" type="text">
+                <input class="input_bs" name="attr_bear_dexterity" type="text">
+                <input class="input_bs" name="attr_bear_presence" type="text">
             </div>
 
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+            <div class="bs_buttons">
                 <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Orso}} {{Agilità=[[@{bear_agility}skh1]]}}"></button>
@@ -142,21 +138,21 @@
             </div>
 
             <div class="bs">
-                <div style="display: flex; width: 60px;">
+                <div class="bs_name_deer">
                     <b>Cervo</b>
                     <input class="input_bs" type="checkbox">
                 </div>
-                <input class="input_bs" name="deer_agility" type="text">
-                <input class="input_bs" name="deer_courage" type="text">
-                <input class="input_bs" name="deer_strength" type="text">
-                <input class="input_bs" name="deer_intelligence" type="text">
-                <input class="input_bs" name="deer_magic" type="text">
-                <input class="input_bs" name="deer_perception" type="text">
-                <input class="input_bs" name="deer_dexterity" type="text">
-                <input class="input_bs" name="deer_presence" type="text">
+                <input class="input_bs" name="attr_deer_agility" type="text">
+                <input class="input_bs" name="attr_deer_courage" type="text">
+                <input class="input_bs" name="attr_deer_strength" type="text">
+                <input class="input_bs" name="attr_deer_intelligence" type="text">
+                <input class="input_bs" name="attr_deer_magic" type="text">
+                <input class="input_bs" name="attr_deer_perception" type="text">
+                <input class="input_bs" name="attr_deer_dexterity" type="text">
+                <input class="input_bs" name="attr_deer_presence" type="text">
             </div>
 
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+            <div class="bs_buttons">
                 <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Cervo}} {{Agilità=[[@{deer_agility}skh1]]}}"></button>
@@ -177,21 +173,21 @@
             </div>
 
             <div class="bs">
-                <div style="display: flex; width: 70px;">
+                <div class="bs_name_eagle">
                     <b>Aquila</b>
                     <input class="input_bs" type="checkbox">
                 </div>
-                <input class="input_bs" name="eagle_agility" type="text">
-                <input class="input_bs" name="eagle_courage" type="text">
-                <input class="input_bs" name="eagle_strength" type="text">
-                <input class="input_bs" name="eagle_intelligence" type="text">
-                <input class="input_bs" name="eagle_magic" type="text">
-                <input class="input_bs" name="eagle_perception" type="text">
-                <input class="input_bs" name="eagle_dexterity" type="text">
-                <input class="input_bs" name="eagle_presence" type="text">
+                <input class="input_bs" name="attr_eagle_agility" type="text">
+                <input class="input_bs" name="attr_eagle_courage" type="text">
+                <input class="input_bs" name="attr_eagle_strength" type="text">
+                <input class="input_bs" name="attr_eagle_intelligence" type="text">
+                <input class="input_bs" name="attr_eagle_magic" type="text">
+                <input class="input_bs" name="attr_eagle_perception" type="text">
+                <input class="input_bs" name="attr_eagle_dexterity" type="text">
+                <input class="input_bs" name="attr_eagle_presence" type="text">
             </div>
 
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+            <div class="bs_buttons">
                 <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Aquila}} {{Agilità=[[@{eagle_agility}skh1]]}}"></button>
@@ -212,21 +208,21 @@
             </div>
 
             <div class="bs">
-                <div style="display: flex; width: 80px;">
+                <div class="bs_name_snake">
                     <b>Serpente</b>
                     <input class="input_bs" type="checkbox">
                 </div>
-                <input class="input_bs" name="snake_agility" type="text">
-                <input class="input_bs" name="snake_courage" type="text">
-                <input class="input_bs" name="snake_strength" type="text">
-                <input class="input_bs" name="snake_intelligence" type="text">
-                <input class="input_bs" name="snake_magic" type="text">
-                <input class="input_bs" name="snake_perception" type="text">
-                <input class="input_bs" name="snake_dexterity" type="text">
-                <input class="input_bs" name="snake_presence" type="text">
+                <input class="input_bs" name="attr_snake_agility" type="text">
+                <input class="input_bs" name="attr_snake_courage" type="text">
+                <input class="input_bs" name="attr_snake_strength" type="text">
+                <input class="input_bs" name="attr_snake_intelligence" type="text">
+                <input class="input_bs" name="attr_snake_magic" type="text">
+                <input class="input_bs" name="attr_snake_perception" type="text">
+                <input class="input_bs" name="attr_snake_dexterity" type="text">
+                <input class="input_bs" name="attr_snake_presence" type="text">
             </div>
 
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+            <div class="bs_buttons">
                 <a></a> <!--This is only to allign the buttons-->
                 <button type="roll"
                     value="&{template:default} {{name=@{character_name}, Serpente}} {{Agilità=[[@{snake_agility}skh1]]}}"></button>
@@ -251,36 +247,36 @@
 
     <!--Weapons (only four) and other Character Stats-->
 
-    <div style="display: flex; margin-top: 20;justify-content: space-around;width: 100%;">
-        <div style="display: flex; flex-direction: column; width: 40%;">
-            <div style="display: flex; justify-content: space-around; align-items: center;">
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <b style="font-size: 20; margin-bottom: 5px;">Salute</b>
+    <div class="central_sheet">
+        <div class="central_left_sheet">
+            <div class="central_left_sheet_healt">
+                <div class="central_left_sheet_healt_stats">
+                    <b class="central_left_sheet_stats_name">Salute</b>
                     <div style="display: flex;">
                         <div class="input_stats_min_max">
-                            <b>Attuale</b><input class="input_stats" type="number">
+                            <b>Attuale</b><input class="input_stats" type="number" name="attr_character_life">
                         </div>
                         <div class="input_stats_min_max">
-                            <b>Massima</b><input class="input_stats" type="number">
+                            <b>Massima</b><input class="input_stats" type="number" name="attr_character_life_max">
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <b style="font-size: 20; margin-bottom: 5px;">Mana</b>
+                <div class="central_left_sheet_healt_stats">
+                    <b class="central_left_sheet_stats_name">Mana</b>
                     <div style="display: flex;">
                         <div class="input_stats_min_max">
-                            <b>Attuale</b><input class="input_stats" type="number">
+                            <b>Attuale</b><input class="input_stats" type="number" name="attr_character_mana">
                         </div>
                         <div class="input_stats_min_max">
-                            <b>Massimo</b><input class="input_stats" type="number">
+                            <b>Massimo</b><input class="input_stats" type="number" name="attr_character_mana_max">
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <b style="font-size: 20; margin-bottom: 21px;">Armatura</b>
+                <div class="central_left_sheet_healt_stats">
+                    <b class="central_left_sheet_stats_name2">Armatura</b>
                     <div style="display: flex;">
                         <div class="input_stats_min_max">
-                            <input class="input_stats" type="number">
+                            <input class="input_stats" type="number" name="attr_character_armor">
                         </div>
                     </div>
                 </div>
@@ -288,14 +284,43 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><b>Arma</b><input style="margin-left: 10;" name="weapon2"></div>
+                        <div class="weaponName"><b>Arma</b><input class="weapon_input" name="weapon"></div>
                     </div>
-                    <div class="stats_weapon" style="margin-bottom: 15; margin-top: 5;">
+                    <div class="stats_weapon">
                         <div class="weapons">
                             <b>Attacco</b>
                         </div>
                         <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="attackDice2">
+                            <input class="inputWeaponDice" type="text" name="attr_attackDice">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="attackRoll"
+                                value="&{template:default} {{name=@{character_name}, @{weapon}}} {{Attacco=[[@{attackDice}]]}}"></button>
+                        </div>
+                        <div class="weapons">
+                            <b>Danno</b>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attr_damageDice">
+                        </div>
+                        <div class="weaponButtons">
+                            <button type="roll" name="damageRoll"
+                                value="&{template:default} {{name=@{character_name}, @{weapon}}} {{Danno=[[@{damageDice}]]}}"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="makeWeapon">
+                <div>
+                    <div>
+                        <div class="weaponName"><b>Arma</b><input class="weapon_input" name="weapon2"></div>
+                    </div>
+                    <div class="stats_weapon">
+                        <div class="weapons">
+                            <b>Attacco</b>
+                        </div>
+                        <div class="weaponsStats">
+                            <input class="inputWeaponDice" type="text" name="attr_attackDice2">
                         </div>
                         <div class="weaponButtons">
                             <button type="roll" name="attackRoll2"
@@ -305,7 +330,7 @@
                             <b>Danno</b>
                         </div>
                         <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="damageDice2">
+                            <input class="inputWeaponDice" type="text" name="attr_damageDice2">
                         </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll2"
@@ -317,24 +342,24 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><b>Arma</b><input style="margin-left: 10;" name="weapon3"></div>
+                        <div class="weaponName"><b>Arma</b><input class="weapon_input" name="weapon3"></div>
                     </div>
-                    <div class="stats_weapon" style="margin-bottom: 15; margin-top: 5;">
+                    <div class="stats_weapon">
                         <div class="weapons">
                             <b>Attacco</b>
                         </div>
                         <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="attackDice3">
+                            <input class="inputWeaponDice" type="text" name="attr_attackDice3">
                         </div>
                         <div class="weaponButtons">
-                            <button type="roll" name="attackRoll3"
+                            <button type="roll" name="attackRoll2"
                                 value="&{template:default} {{name=@{character_name}, @{weapon3}}} {{Attacco=[[@{attackDice3}]]}}"></button>
                         </div>
                         <div class="weapons">
                             <b>Danno</b>
                         </div>
                         <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="damageDice3">
+                            <input class="inputWeaponDice" type="text" name="attr_damageDice3">
                         </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll3"
@@ -346,14 +371,14 @@
             <div class="makeWeapon">
                 <div>
                     <div>
-                        <div class="weaponName"><b>Arma</b><input style="margin-left: 10;" name="weapon4"></div>
+                        <div class="weaponName"><b>Arma</b><input class="weapon_input" name="weapon4"></div>
                     </div>
-                    <div class="stats_weapon" style="margin-bottom: 15; margin-top: 5;">
+                    <div class="stats_weapon">
                         <div class="weapons">
                             <b>Attacco</b>
                         </div>
                         <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="attackDice4">
+                            <input class="inputWeaponDice" type="text" name="attr_attackDice4">
                         </div>
                         <div class="weaponButtons">
                             <button type="roll" name="attackRoll4"
@@ -363,7 +388,7 @@
                             <b>Danno</b>
                         </div>
                         <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="damageDice4">
+                            <input class="inputWeaponDice" type="text" name="attr_damageDice4">
                         </div>
                         <div class="weaponButtons">
                             <button type="roll" name="damageRoll4"
@@ -372,111 +397,82 @@
                     </div>
                 </div>
             </div>
-            <div class="makeWeapon">
-                <div>
-                    <div>
-                        <div class="weaponName"><b>Arma</b><input style="margin-left: 10;" name="weapon5"></div>
-                    </div>
-                    <div class="stats_weapon" style="margin-bottom: 10; margin-top: 5;">
-                        <div class="weapons">
-                            <b>Attacco</b>
-                        </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="attackDice5">
-                        </div>
-                        <div class="weaponButtons">
-                            <button type="roll" name="attackRoll5"
-                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Attacco=[[@{attackDice5}]]}}"></button>
-                        </div>
-                        <div class="weapons">
-                            <b>Danno</b>
-                        </div>
-                        <div class="weaponsStats">
-                            <input class="inputWeaponDice" type="text" name="damageDice5">
-                        </div>
-                        <div class="weaponButtons">
-                            <button type="roll" name="damageRoll5"
-                                value="&{template:default} {{name=@{character_name}, @{weapon5}}} {{Danno=[[@{damageDice5}]]}}"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!--Utility and other Beasts Stats-->
 
-        <div style="display: flex; flex-direction: column;  justify-content: space-around;">
+        <div class="utility_container">
             <div class="utility">
-                <div style="display: flex; flex-direction: column;">
-                    <b style="font-size: 15; margin-bottom: 10px;">Freccie/Dardi</b>
+                <div class="utility_stats">
+                    <b class="utility_stats_name">Freccie/Dardi</b>
                     <div class="input_stats_min_max">
-                        <input class="input_stats" type="number" max="20" min="0">
+                        <input class="input_stats" type="number" max="20" min="0" name="attr_ammo">
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column;">
-                    <b style="font-size: 15; margin-bottom: 10px;">Razioni</b>
+                <div class="utility_stats">
+                    <b class="utility_stats_name">Razioni</b>
                     <div class="input_stats_min_max">
-                        <input class="input_stats" type="number" max="20" min="0">
+                        <input class="input_stats" type="number" max="20" min="0" name="attr_rations">
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column;">
-                    <b style="font-size: 15; margin-bottom: 10px;">Borraccia</b>
+                <div class="utility_stats">
+                    <b class="utility_stats_name">Borraccia</b>
                     <div class="input_stats_min_max">
-                        <input class="input_stats" type="number" max="7" min="0">
+                        <input class="input_stats" type="number" max="7" min="0" name="attr_water">
                     </div>
                 </div>
             </div>
             <div class="extra_ability">
-                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability"></div>
+                <div><b>Abilità</b><input class="ability_input" name="ability"></div>
                 <div class="extra_ability_input">
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx">
+                    <input class="extra_ability_input2" name="attr_ability_roll_sx">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability}}} {{Roll=[[@{ability_roll_sx}]]}}"></button>
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_dx">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability}}} {{Roll=[[@{ability_roll_dx}]]}}"></button>
                 </div>
             </div>
             <div class="extra_ability">
-                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability2"></div>
+                <div><b>Abilità</b><input class="ability_input" name="ability2"></div>
                 <div class="extra_ability_input">
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx2">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_sx2">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability2}}} {{Roll=[[@{ability_roll_sx2}]]}}"></button>
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx2">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_dx2">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability2}}} {{Roll=[[@{ability_roll_dx2}]]}}"></button>
                 </div>
             </div>
             <div class="extra_ability">
-                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability3"></div>
+                <div><b>Abilità</b><input class="ability_input" name="ability3"></div>
                 <div class="extra_ability_input">
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx3">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_sx3">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability3}}} {{Roll=[[@{ability_roll_sx3}]]}}"></button>
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx3">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_dx3">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability3}}} {{Roll=[[@{ability_roll_dx3}]]}}"></button>
                 </div>
             </div>
             <div class="extra_ability">
-                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability4"></div>
+                <div><b>Abilità</b><input class="ability_input" name="ability4"></div>
                 <div class="extra_ability_input">
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx4">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_sx4">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability4}}} {{Roll=[[@{ability_roll_sx4}]]}}"></button>
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx4">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_dx4">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability4}}} {{Roll=[[@{ability_roll_dx4}]]}}"></button>
                 </div>
             </div>
             <div class="extra_ability">
-                <div><b>Abilità</b><input style="margin-left: 10px;" name="ability5"></div>
+                <div><b>Abilità</b><input class="ability_input" name="ability5"></div>
                 <div class="extra_ability_input">
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_sx5">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_sx5">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability5}}} {{Roll=[[@{ability_roll_sx5}]]}}"></button>
-                    <input style="width: 65px; font-size: 15;" name="ability_roll_dx5">
+                    <input class="extra_ability_input2"  name="attr_ability_roll_dx5">
                     <button type="roll"
                         value="&{template:default} {{name=@{character_name}, @{ability5}}} {{Roll=[[@{ability_roll_dx5}]]}}"></button>
                 </div>
@@ -485,40 +481,40 @@
 
 
         <div class="stats_right_bottom">
-            <b style="font-size: 20; margin-bottom: 5px;">Orso</b>
-            <div style="display: flex;">
+            <b class="stats_right_bottom_name">Orso</b>
+            <div class="stats_right_bottom_display">
                 <div class="input_stats_min_max">
-                    <b>Attuale</b><input class="input_stats" type="number">
+                    <b>Attuale</b><input class="input_stats" type="number" name="attr_bear-healt">
                 </div>
                 <div class="input_stats_min_max">
-                    <b>Massima</b><input class="input_stats" type="number">
-                </div>
-            </div>
-            <b style="font-size: 20; margin-bottom: 5px;">Cervo</b>
-            <div style="display: flex;">
-                <div class="input_stats_min_max">
-                    <b>Attuale</b><input class="input_stats" type="number">
-                </div>
-                <div class="input_stats_min_max">
-                    <b>Massima</b><input class="input_stats" type="number">
+                    <b>Massima</b><input class="input_stats" type="number" name="attr_bear-healt_max">
                 </div>
             </div>
-            <b style="font-size: 20; margin-bottom: 5px;">Aquila</b>
-            <div style="display: flex;">
+            <b class="stats_right_bottom_name">Cervo</b>
+            <div class="stats_right_bottom_display">
                 <div class="input_stats_min_max">
-                    <b>Attuale</b><input class="input_stats" type="number">
+                    <b>Attuale</b><input class="input_stats" type="number" name="attr_deer-healt">
                 </div>
                 <div class="input_stats_min_max">
-                    <b>Massima</b><input class="input_stats" type="number">
+                    <b>Massima</b><input class="input_stats" type="number" name="attr_deer_healt_max">
                 </div>
             </div>
-            <b style="font-size: 20; margin-bottom: 5px;">Serpente</b>
-            <div style="display: flex;">
+            <b class="stats_right_bottom_name">Aquila</b>
+            <div class="stats_right_bottom_display">
                 <div class="input_stats_min_max">
-                    <b>Attuale</b><input class="input_stats" type="number">
+                    <b>Attuale</b><input class="input_stats" type="number" name="attr_eagle_healt">
                 </div>
                 <div class="input_stats_min_max">
-                    <b>Massima</b><input class="input_stats" type="number">
+                    <b>Massima</b><input class="input_stats" type="number" name="attr_eagle_healt_max">
+                </div>
+            </div>
+            <b class="stats_right_bottom_name">Serpente</b>
+            <div class="stats_right_bottom_display">
+                <div class="input_stats_min_max">
+                    <b>Attuale</b><input class="input_stats" type="number" name="attr_snake_healt">
+                </div>
+                <div class="input_stats_min_max">
+                    <b>Massima</b><input class="input_stats" type="number" name="attr_snake_healt_max">
                 </div>
             </div>
         </div>
@@ -530,13 +526,13 @@
     <div class="notes">
         <div class="equip_ability">
             <div><b>Abilità di razza</b></div>
-            <textarea class="equip_ability_input_left"></textarea>
+            <textarea class="equip_ability_input_left" name="attr_race_abilites"></textarea>
             <div><b>Equipaggiamento</b></div>
-            <textarea class="equip_ability_input_left"></textarea>
+            <textarea class="equip_ability_input_left" name="attr_equip"></textarea>
         </div>
         <div class="equip_ability">
             <div><b>Abilità di ruolo</b></div>
-            <textarea class="equip_ability_input_right"></textarea>
+            <textarea class="equip_ability_input_right" name="attr_role_abilites"></textarea>
         </div>
     </div>
 
